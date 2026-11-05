@@ -1,1 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grace Malatou, recrutement et SIRH</title>
+<meta name="description" content="Portfolio de Grace Malatou : recrutement de profils cadres, gestion de projet SIRH, ATS interne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest:#1F3D2B;
+  --forest-deep:#142A1D;
+  --gold:#B8923A;
+  --gold-soft:#E6D3A3;
+  --paper:#F4F7F4;
+  --ink:#1B2620;
+  --muted:#52605A;
+  --line:#D5DDD6;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.6;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;line-height:1.15;margin:0}
+a{color:var(--forest)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px}
 
+header.hero{background:var(--forest);color:#fff;padding:28px 0 72px}
+nav{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:16px;margin-bottom:72px}
+nav a{color:var(--gold-soft);text-decoration:none}
+nav a:hover{text-decoration:underline}
+.hero h1{font-size:clamp(44px,9vw,84px);font-weight:700;letter-spacing:-.01em}
+.hero .rule{width:96px;height:4px;background:var(--gold);margin:24px 0}
+.hero p{max-width:34em;font-size:clamp(19px,3vw,23px);margin:0;color:#E9F0EA}
+.hero .cta{display:inline-block;margin-top:32px;padding:12px 22px;background:var(--gold);color:var(--forest-deep);font-weight:600;text-decoration:none;border-radius:4px}
+.hero .cta:hover{background:var(--gold-soft)}
+
+section{padding:64px 0;border-bottom:1px solid var(--line)}
+section:last-of-type{border-bottom:0}
+h2{font-size:clamp(28px,5vw,38px);color:var(--forest);margin-bottom:24px}
+h3{font-size:22px;margin-bottom:4px}
+.meta{color:var(--muted);font-size:16px;margin:0 0 12px}
+p{margin:0 0 16px;max-width:38em}
+ul{margin:0 0 8px;padding-left:1.2em;max-width:40em}
+li{margin-bottom:6px}
+
+.item{padding:24px 0;border-top:1px solid var(--line)}
+.item:first-of-type{border-top:0;padding-top:0}
+.note{border-left:4px solid var(--gold);background:#fff;padding:14px 18px;max-width:38em;margin-top:12px}
+
+.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px 32px;margin:8px 0 0;padding:0;list-style:none;max-width:none}
+.results li{border-top:3px solid var(--gold);padding-top:10px;margin:0}
+.results strong{display:block;font-family:Fraunces,Georgia,serif;font-size:24px;color:var(--forest)}
+
+footer{background:var(--forest-deep);color:#D9E3DB;padding:48px 0;font-size:17px}
+footer h2{color:#fff}
+footer a{color:var(--gold-soft)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <nav aria-label="Navigation principale">
+      <a href="#apropos">À propos</a>
+      <a href="#projets">Projets</a>
+      <a href="#experience">Expérience</a>
+      <a href="#formation">Formation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <h1>Grace Malatou</h1>
+    <div class="rule"></div>
+    <p>Chargée de recrutement de profils cadres et cheffe de projet SIRH. Je cherche un poste en entreprise, en RH ou en recrutement, dans une équipe qui développe ses outils RH et où je pourrai participer à ces projets.</p>
+    <a class="cta" href="#contact">Me contacter</a>
+  </div>
+</header>
+
+<main>
+<section id="apropos">
+  <div class="wrap">
+    <h2>À propos</h2>
+    <p>J’ai recruté pendant plus de deux ans pour un cabinet, à La Défense, des profils cadres dans l’industrie, l’aéronautique, l’IT, la finance, le BTP, la vente et les fonctions support. Je travaillais avec beaucoup d’autonomie, au sein d’une petite équipe.</p>
+    <p>Au fil des missions, je me suis intéressée aux outils qui font gagner du temps aux équipes RH. J’ai conduit un projet de SIRH comme cheffe de projet et conçu un ATS interne. Le jury de mon mémoire m’a recommandé de m’orienter vers les métiers du SIRH, et c’est la direction que je veux prendre.</p>
+    <p>Je suis aussi de près les règles du recrutement, notamment celles sur l’usage de l’IA (AI Act).</p>
+  </div>
+</section>
+
+<section id="projets">
+  <div class="wrap">
+    <h2>Projets</h2>
+
+    <div class="item">
+      <h3>Atlas+, projet SIRH</h3>
+      <p class="meta">Rôle : cheffe de projet</p>
+      <p>Atlas+ est une version plus développée d’Atlas, dont l’ancienne version n’était pas assez aboutie. L’outil fait gagner du temps au quotidien.</p>
+      <p>J’ai piloté le projet de bout en bout :</p>
+      <ul>
+        <li>Identifier les besoins des équipes</li>
+        <li>Rédiger le cahier des charges</li>
+        <li>Faire valider le projet par les parties prenantes</li>
+        <li>Piloter le déploiement</li>
+      </ul>
+      <p class="note">Axes travaillés : le workflow ATLAS et l’automatisation des refus, avec cahiers des charges et user stories.</p>
+    </div>
+
+    <div class="item">
+      <h3>Grace, mon ATS interne</h3>
+      <p class="meta">Conçu pour mon mémoire, puis repris dans une nouvelle version</p>
+      <p>Un outil de suivi des recrutements. La nouvelle version gère les offres et les candidatures, et permet de passer un candidat retenu vers le module d’administration du personnel.</p>
+      <!-- Ajouter ici une capture d’écran : <img src="capture-ats.png" alt="Écran de l’ATS Grace" style="max-width:100%"> -->
+    </div>
+
+    <div class="item">
+      <h3>RECOPE</h3>
+      <p class="meta">Projet académique, rôle : développement web</p>
+      <p>Création d’un site web sur le thème de la récupération des cosmétiques périmés. J’ai réalisé moi-même la partie web du projet.</p>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Expérience</h2>
+
+    <div class="item">
+      <h3>Chargée de recrutement, Crit Experts et Cadres</h3>
+      <p class="meta">La Défense, mars 2024 à septembre 2026, en alternance</p>
+      <ul>
+        <li>Recruter des profils cadres dans de nombreux secteurs</li>
+        <li>Gérer chaque recrutement de bout en bout, avec autonomie</li>
+        <li>Suivre la relation avec les managers et les candidats</li>
+      </ul>
+      <ul class="results" aria-label="Résultats chez Crit">
+        <li><strong>101 140 €</strong>de facturation sur 2 ans, à partir de 13 placements</li>
+        <li><strong>80 %</strong>de périodes d’essai réussies</li>
+        <li><strong>3 jours à 4 semaines</strong>de délai moyen selon le profil</li>
+        <li><strong>75 %</strong>de satisfaction des managers selon les postes</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <h3>Assistante RH, GIS Services</h3>
+      <p class="meta">CDD de 18 mois, 2022 à 2023</p>
+    </div>
+  </div>
+</section>
+
+<section id="formation">
+  <div class="wrap">
+    <h2>Formation</h2>
+    <div class="item">
+      <h3>Master en Management des Ressources Humaines</h3>
+      <p class="meta">Ascencia Business School, diplôme 2026</p>
+      <p>Spécialisation : coordination de la gestion du personnel et digitalisation RH.</p>
+    </div>
+    <div class="item">
+      <h3>Bachelor Chargée des relations sociales et projet RSE</h3>
+      <p class="meta">Fac For Pro, 2023 à 2024</p>
+    </div>
+    <div class="item">
+      <h3>Licence professionnelle Administration des entreprises</h3>
+      <p class="meta">ESGAE, 2016 à 2017</p>
+    </div>
+    <div class="item">
+      <h3>BTS Gestion financière</h3>
+      <p class="meta">ESGAE, 2015 à 2016</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>Pour échanger sur un poste en RH ou en SIRH, écrivez-moi :</p>
+    <p><a href="mailto:tegimalgracemalatou@gmail.com">tegimalgracemalatou@gmail.com</a></p>
+    <!-- Ajouter ici votre lien LinkedIn : <p><a href="https://www.linkedin.com/in/VOTRE-PROFIL">Mon profil LinkedIn</a></p> -->
+  </div>
+</footer>
+
+</body>
+</html>
