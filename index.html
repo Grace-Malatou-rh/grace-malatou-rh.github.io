@@ -1,186 +1,1052 @@
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Grace Malatou, recrutement et SIRH</title>
-<meta name="description" content="Portfolio de Grace Malatou : recrutement de profils cadres, gestion de projet SIRH, ATS interne.">
+
+<title>Grace Malatou | Talent Acquisition & RH digitales</title>
+<meta name="description" content="Portfolio de Grace Malatou : recrutement, Talent Acquisition, gestion de projet SIRH et digitalisation RH.">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
-:root{
-  --forest:#1F3D2B;
-  --forest-deep:#142A1D;
-  --gold:#B8923A;
-  --gold-soft:#E6D3A3;
-  --paper:#F4F7F4;
-  --ink:#1B2620;
-  --muted:#52605A;
-  --line:#D5DDD6;
+:root {
+  --navy: #14243A;
+  --navy-light: #203A56;
+  --accent: #35BFA5;
+  --accent-light: #DDF5EF;
+  --paper: #F5F7FA;
+  --white: #FFFFFF;
+  --ink: #263448;
+  --muted: #718096;
+  --line: #E2E8F0;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:18px;line-height:1.6;color:var(--ink);background:var(--paper)}
-h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;line-height:1.15;margin:0}
-a{color:var(--forest)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
-.wrap{max-width:860px;margin:0 auto;padding:0 24px}
 
-header.hero{background:var(--forest);color:#fff;padding:28px 0 72px}
-nav{display:flex;flex-wrap:wrap;gap:8px 24px;font-size:16px;margin-bottom:72px}
-nav a{color:var(--gold-soft);text-decoration:none}
-nav a:hover{text-decoration:underline}
-.hero h1{font-size:clamp(44px,9vw,84px);font-weight:700;letter-spacing:-.01em}
-.hero .rule{width:96px;height:4px;background:var(--gold);margin:24px 0}
-.hero p{max-width:34em;font-size:clamp(19px,3vw,23px);margin:0;color:#E9F0EA}
-.hero .cta{display:inline-block;margin-top:32px;padding:12px 22px;background:var(--gold);color:var(--forest-deep);font-weight:600;text-decoration:none;border-radius:4px}
-.hero .cta:hover{background:var(--gold-soft)}
+* { box-sizing: border-box; }
 
-section{padding:64px 0;border-bottom:1px solid var(--line)}
-section:last-of-type{border-bottom:0}
-h2{font-size:clamp(28px,5vw,38px);color:var(--forest);margin-bottom:24px}
-h3{font-size:22px;margin-bottom:4px}
-.meta{color:var(--muted);font-size:16px;margin:0 0 12px}
-p{margin:0 0 16px;max-width:38em}
-ul{margin:0 0 8px;padding-left:1.2em;max-width:40em}
-li{margin-bottom:6px}
+html { scroll-behavior: smooth; }
 
-.item{padding:24px 0;border-top:1px solid var(--line)}
-.item:first-of-type{border-top:0;padding-top:0}
-.note{border-left:4px solid var(--gold);background:#fff;padding:14px 18px;max-width:38em;margin-top:12px}
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--paper);
+}
 
-.results{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px 32px;margin:8px 0 0;padding:0;list-style:none;max-width:none}
-.results li{border-top:3px solid var(--gold);padding-top:10px;margin:0}
-.results strong{display:block;font-family:Fraunces,Georgia,serif;font-size:24px;color:var(--forest)}
+h1,h2,h3,h4 {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.2;
+  margin: 0;
+  color: var(--navy);
+}
 
-footer{background:var(--forest-deep);color:#D9E3DB;padding:48px 0;font-size:17px}
-footer h2{color:#fff}
-footer a{color:var(--gold-soft)}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+a { color: inherit; }
+
+img { max-width: 100%; }
+
+.wrap {
+  width: min(1080px, calc(100% - 44px));
+  margin: auto;
+}
+
+section {
+  padding: 88px 0;
+  scroll-margin-top: 30px;
+}
+
+.section-label {
+  color: #168D78;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 40px);
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.section-intro {
+  color: var(--muted);
+  max-width: 650px;
+  margin-bottom: 38px;
+}
+
+p { margin: 0 0 16px; }
+
+ul { padding-left: 20px; }
+
+li { margin-bottom: 7px; }
+
+a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+/* NAVIGATION */
+
+.topbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--navy);
+  text-decoration: none;
+  letter-spacing: -.5px;
+}
+
+.brand span { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.nav-links a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+/* HERO */
+
+.hero {
+  background: var(--navy);
+  color: var(--white);
+  padding: 105px 0 95px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border: 1px solid rgba(53,191,165,.18);
+  border-radius: 50%;
+  right: -140px;
+  top: -170px;
+  box-shadow: 0 0 0 55px rgba(53,191,165,.035),
+              0 0 0 110px rgba(53,191,165,.025);
+}
+
+.hero-content {
+  max-width: 790px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-kicker {
+  color: #78DCC5;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  color: white;
+  font-size: clamp(42px, 7vw, 76px);
+  letter-spacing: -3px;
+  margin-bottom: 20px;
+}
+
+.hero h1 span { color: #78DCC5; }
+
+.hero-description {
+  color: #D4DFEA;
+  font-size: 19px;
+  max-width: 690px;
+  line-height: 1.8;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.hero-tags span {
+  border: 1px solid rgba(255,255,255,.2);
+  color: #E7F0F6;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 13px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 13px 21px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  transition: .2s;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--navy);
+}
+
+.btn-primary:hover { background: #75DCC6; }
+
+.btn-outline {
+  border: 1px solid rgba(255,255,255,.35);
+  color: white;
+}
+
+.btn-outline:hover { background: rgba(255,255,255,.1); }
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.4fr .8fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.about-text { max-width: 650px; }
+
+.about-text p { color: #536176; }
+
+.about-card {
+  background: white;
+  padding: 26px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.about-card h3 {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.skill:last-child { border-bottom: 0; }
+
+.skill strong { color: var(--navy); }
+
+/* PROJECTS */
+
+#projets { background: #FFFFFF; }
+
+.project {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 30px;
+  margin-bottom: 26px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.project h3 {
+  font-size: 25px;
+  letter-spacing: -.7px;
+}
+
+.project-type {
+  background: var(--accent-light);
+  color: #167F6C;
+  padding: 6px 13px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.project-role {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+.project-description {
+  color: #536176;
+  max-width: 780px;
+}
+
+.project-list {
+  color: #536176;
+  margin: 18px 0;
+}
+
+.project-note {
+  background: #F1F7F5;
+  border-left: 3px solid var(--accent);
+  padding: 15px 18px;
+  border-radius: 0 7px 7px 0;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* TALAS GALLERY */
+
+.gallery-heading {
+  margin-top: 42px;
+  margin-bottom: 20px;
+}
+
+.gallery-heading h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.gallery-heading p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.talas-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.talas-figure {
+  margin: 0;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform .2s, box-shadow .2s;
+}
+
+.talas-figure:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(20,36,58,.09);
+}
+
+.talas-figure a {
+  display: block;
+  background: #EDF1F5;
+  overflow: hidden;
+}
+
+.talas-figure img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: contain;
+  transition: transform .25s;
+}
+
+.talas-figure a:hover img { transform: scale(1.025); }
+
+.talas-figure figcaption {
+  padding: 17px;
+}
+
+.talas-figure figcaption strong {
+  display: block;
+  color: var(--navy);
+  font-family: "Manrope", sans-serif;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.talas-figure figcaption span {
+  display: block;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.vision-card {
+  background: var(--navy);
+  color: white;
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 26px;
+}
+
+.vision-card h4 {
+  color: #78DCC5;
+  font-size: 17px;
+  margin-bottom: 9px;
+}
+
+.vision-card p {
+  color: #D4DFEA;
+  margin: 0;
+}
+
+/* OTHER PROJECTS */
+
+.project-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #168D78;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.project-link:hover { text-decoration: underline; }
+
+/* EXPERIENCE */
+
+.experience-card {
+  padding: 25px 0;
+  border-top: 1px solid var(--line);
+}
+
+.experience-card:first-of-type { border-top: 0; }
+
+.experience-card h3 { font-size: 20px; }
+
+.experience-meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 7px 0 15px;
+}
+
+.experience-card ul { color: #536176; }
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.result-card {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 17px;
+}
+
+.result-card strong {
+  display: block;
+  font-family: "Manrope", sans-serif;
+  font-size: 23px;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.result-card span {
+  display: block;
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+/* FORMATION */
+
+#formation { background: white; }
+
+.education-list {
+  border-left: 2px solid var(--accent);
+  padding-left: 25px;
+}
+
+.education-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.education-item::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  left: -31px;
+  top: 7px;
+}
+
+.education-item h3 { font-size: 18px; }
+
+.education-item p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 6px;
+}
+
+/* CONTACT */
+
+footer {
+  background: var(--navy);
+  color: white;
+  padding: 70px 0;
+  text-align: center;
+}
+
+footer h2 {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+footer p { color: #D4DFEA; margin: 0 auto 12px; }
+
+footer a {
+  color: #78DCC5;
+  text-decoration: none;
+}
+
+footer a:hover { text-decoration: underline; }
+
+.footer-bottom {
+  margin-top: 35px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255,255,255,.15);
+  font-size: 12px;
+  color: #AEBCCD;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 760px) {
+  .nav {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 17px 0;
+  }
+
+  .nav-links { gap: 10px 17px; }
+
+  .hero { padding: 75px 0 65px; }
+
+  .hero h1 { letter-spacing: -2px; }
+
+  .about-grid { grid-template-columns: 1fr; gap: 25px; }
+
+  .results { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px) {
+  section { padding: 62px 0; }
+
+  .talas-gallery { grid-template-columns: 1fr; }
+
+  .project { padding: 21px; }
+
+  .results { grid-template-columns: 1fr 1fr; }
+
+  .hero-description { font-size: 17px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition: none !important; }
+}
 </style>
 </head>
+
 <body>
 
-<header class="hero">
-  <div class="wrap">
-    <nav aria-label="Navigation principale">
+<header class="topbar">
+  <div class="wrap nav">
+    <a href="#" class="brand">GRACE<span>.</span> MALATOU</a>
+    <nav class="nav-links" aria-label="Navigation principale">
       <a href="#apropos">À propos</a>
       <a href="#projets">Projets</a>
       <a href="#experience">Expérience</a>
       <a href="#formation">Formation</a>
       <a href="#contact">Contact</a>
     </nav>
-    <h1>Grace Malatou</h1>
-    <div class="rule"></div>
-    <p>Chargée de recrutement de profils cadres et cheffe de projet SIRH. Je cherche un poste en entreprise, en RH ou en recrutement, dans une équipe qui développe ses outils RH et où je pourrai participer à ces projets.</p>
-    <a class="cta" href="#contact">Me contacter</a>
   </div>
 </header>
 
 <main>
-<section id="apropos">
-  <div class="wrap">
-    <h2>À propos</h2>
-    <p>J’ai recruté pendant plus de deux ans pour un cabinet, à La Défense, des profils cadres dans l’industrie, l’aéronautique, l’IT, la finance, le BTP, la vente et les fonctions support. Je travaillais avec beaucoup d’autonomie, au sein d’une petite équipe.</p>
-    <p>Au fil des missions, je me suis intéressée aux outils qui font gagner du temps aux équipes RH. J’ai conduit un projet de SIRH comme cheffe de projet et conçu un ATS interne. Le jury de mon mémoire m’a recommandé de m’orienter vers les métiers du SIRH, et c’est la direction que je veux prendre.</p>
-    <p>Je suis aussi de près les règles du recrutement, notamment celles sur l’usage de l’IA (AI Act).</p>
+
+<!-- HERO -->
+
+<section class="hero">
+  <div class="wrap hero-content">
+
+    <p class="hero-kicker">Portfolio professionnel · 2026</p>
+
+    <h1>Grace <span>Malatou</span></h1>
+
+    <p class="hero-description">
+      Recrutement, Talent Acquisition et digitalisation RH.
+      J'associe mon expérience opérationnelle du recrutement
+      à la conception d'outils et de processus RH plus efficaces.
+    </p>
+
+    <div class="hero-tags">
+      <span>Talent Acquisition</span>
+      <span>Gestion de projet SIRH</span>
+      <span>Digitalisation RH</span>
+      <span>IA & recrutement</span>
+    </div>
+
+    <div class="hero-actions">
+      <a href="#projets" class="btn btn-primary">Découvrir mes projets</a>
+      <a href="#contact" class="btn btn-outline">Me contacter</a>
+    </div>
+
   </div>
 </section>
+
+<!-- ABOUT -->
+
+<section id="apropos">
+  <div class="wrap">
+
+    <p class="section-label">Mon parcours</p>
+    <h2 class="section-title">À propos</h2>
+
+    <div class="about-grid">
+
+      <div class="about-text">
+
+        <p>
+          J'ai recruté pendant plus de deux ans pour un cabinet
+          à La Défense, des profils cadres dans l'industrie,
+          l'aéronautique, l'IT, la finance, le BTP, la vente
+          et les fonctions support.
+        </p>
+
+        <p>
+          Habituée à gérer plusieurs recrutements simultanément,
+          j'ai développé une approche autonome du sourcing,
+          de la sélection et de l'accompagnement des managers.
+        </p>
+
+        <p>
+          Au fil de mes missions, je me suis également intéressée
+          aux outils qui permettent de gagner du temps aux équipes RH.
+          J'ai travaillé sur un projet SIRH et conçu TALAS,
+          un outil de suivi du recrutement.
+        </p>
+
+        <p>
+          Mon objectif est de contribuer à des projets qui associent
+          expertise RH, amélioration des processus et nouvelles technologies.
+        </p>
+
+      </div>
+
+      <aside class="about-card">
+        <h3>Domaines d'intervention</h3>
+
+        <div class="skill">
+          <strong>Recrutement</strong>
+          <span>Expertise</span>
+        </div>
+
+        <div class="skill">
+          <strong>Sourcing & chasse</strong>
+          <span>Expertise</span>
+        </div>
+
+        <div class="skill">
+          <strong>Projet SIRH</strong>
+          <span>Gestion de projet</span>
+        </div>
+
+        <div class="skill">
+          <strong>Digitalisation RH</strong>
+          <span>Conception</span>
+        </div>
+
+        <div class="skill">
+          <strong>IA & RH</strong>
+          <span>Veille et exploration</span>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
 
 <section id="projets">
   <div class="wrap">
-    <h2>Projets</h2>
 
-    <div class="item">
-      <h3>Atlas+, projet SIRH</h3>
-      <p class="meta">Rôle : cheffe de projet</p>
-      <p>Atlas+ est une version plus développée d’Atlas, dont l’ancienne version n’était pas assez aboutie. L’outil fait gagner du temps au quotidien.</p>
-      <p>J’ai piloté le projet de bout en bout :</p>
-      <ul>
-        <li>Identifier les besoins des équipes</li>
-        <li>Rédiger le cahier des charges</li>
-        <li>Faire valider le projet par les parties prenantes</li>
-        <li>Piloter le déploiement</li>
-      </ul>
-      <p class="note">Axes travaillés : le workflow ATLAS et l’automatisation des refus, avec cahiers des charges et user stories.</p>
-    </div>
+    <p class="section-label">Réalisations</p>
+    <h2 class="section-title">Projets sélectionnés</h2>
 
-    <div class="item">
-      <h3><h3>TALAS – Mon ATS de recrutement</h3></h3>
-      <p class="meta">Conçu pour mon mémoire, puis repris dans une nouvelle version</p>
-      <p>Un outil de suivi des recrutements. J’ai rédigé le cahier des charges et généré l’application avec un outil d’IA. La nouvelle version gère les offres et les candidatures, et permet de passer un candidat retenu vers le module d’administration du personnel.</p>
-      <!-- Ajouter ici une capture d’écran : <img src="capture-ats.png" alt="Écran de l’ATS Grace" style="max-width:100%"> -->
-    </div>
+    <p class="section-intro">
+      Des projets qui illustrent mon intérêt pour le recrutement,
+      les outils RH et l'amélioration des processus.
+    </p>
 
-    <div class="item">
-      <h3>RECOPE</h3>
-      <p class="meta">Projet académique, site créé avec Vercel (outil v0)</p>
-      <p>Site web sur le thème de la récupération des cosmétiques périmés. J’ai rédigé les consignes et piloté la création du site avec un outil d’IA.</p>
-      <p><a href="https://kzmimpyw7r0p56pg80ai.lite.vusercontent.net/">Voir le site</a></p>
-    </div>
+    <!-- ATLAS -->
+
+    <article class="project">
+
+      <div class="project-header">
+        <h3>Atlas+ · Projet SIRH</h3>
+        <span class="project-type">Gestion de projet</span>
+      </div>
+
+      <p class="project-role">Rôle : cheffe de projet</p>
+
+      <div class="project-description">
+
+        <p>
+          Atlas+ est une version plus développée d'Atlas,
+          conçue pour améliorer les processus et faire gagner
+          du temps aux équipes.
+        </p>
+
+        <p>J'ai travaillé sur plusieurs dimensions du projet :</p>
+
+        <ul class="project-list">
+          <li>Identification des besoins des équipes</li>
+          <li>Rédaction du cahier des charges</li>
+          <li>Validation du projet par les parties prenantes</li>
+          <li>Pilotage du déploiement</li>
+        </ul>
+
+        <div class="project-note">
+          <strong>Axes travaillés :</strong>
+          workflow ATLAS et automatisation des refus,
+          avec cahiers des charges et user stories.
+        </div>
+
+      </div>
+    </article>
+
+    <!-- TALAS -->
+
+    <article class="project">
+
+      <div class="project-header">
+        <h3>TALAS · ATS de recrutement</h3>
+        <span class="project-type">Talent Acquisition</span>
+      </div>
+
+      <p class="project-role">
+        Conception fonctionnelle et développement assisté par IA
+      </p>
+
+      <div class="project-description">
+
+        <p>
+          <strong>TALAS</strong> est un outil de gestion et de suivi
+          du processus de recrutement. Il permet de centraliser
+          les candidatures, de structurer les étapes de sélection
+          et de faciliter le pilotage des recrutements.
+        </p>
+
+        <p>
+          J'ai travaillé sur la conception fonctionnelle de l'outil,
+          la définition des besoins et la génération de l'application
+          à l'aide d'un outil d'intelligence artificielle.
+        </p>
+
+        <p>Les fonctionnalités présentées comprennent :</p>
+
+        <ul class="project-list">
+          <li>Gestion des offres et des candidatures</li>
+          <li>Suivi des candidats dans le pipeline de recrutement</li>
+          <li>Centralisation des profils et des documents</li>
+          <li>Suivi des entretiens et des retours managers</li>
+          <li>Reporting et indicateurs de recrutement</li>
+          <li>Transfert du candidat retenu vers l'administration du personnel</li>
+        </ul>
+
+      </div>
+
+      <div class="gallery-heading">
+        <h4>Découvrir l'interface de TALAS</h4>
+        <p>Six écrans pour illustrer les différentes étapes du processus.</p>
+      </div>
+
+      <div class="talas-gallery">
+
+        <figure class="talas-figure">
+          <a href="images/talas-01-parcours.webp" target="_blank" rel="noopener">
+            <img src="images/talas-01-parcours.webp"
+                 alt="Tableau d'un poste présentant les six étapes du recrutement"
+                 loading="lazy">
+          </a>
+          <figcaption>
+            <strong>01 · Parcours de recrutement</strong>
+            <span>Visualisation des six étapes, de la sélection au candidat retenu, avec le suivi des retours du manager.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="talas-figure">
+          <a href="images/talas-02-fiche.webp" target="_blank" rel="noopener">
+            <img src="images/talas-02-fiche.webp"
+                 alt="Fiche candidat avec profil, CV et documents"
+                 loading="lazy">
+          </a>
+          <figcaption>
+            <strong>02 · Fiche candidat</strong>
+            <span>Centralisation du profil, du CV et des documents du candidat.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="talas-figure">
+          <a href="images/talas-03-manager.webp" target="_blank" rel="noopener">
+            <img src="images/talas-03-manager.webp"
+                 alt="Interface manager avec entretien et compte rendu"
+                 loading="lazy">
+          </a>
+          <figcaption>
+            <strong>03 · Espace Manager</strong>
+            <span>Suivi de l'entretien et transmission d'un compte rendu structuré.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="talas-figure">
+          <a href="images/talas-04-reporting.webp" target="_blank" rel="noopener">
+            <img src="images/talas-04-reporting.webp"
+                 alt="Tableau de bord reporting et indicateurs de recrutement"
+                 loading="lazy">
+          </a>
+          <figcaption>
+            <strong>04 · Reporting</strong>
+            <span>Indicateurs de recrutement et suivi des délais à chaque étape.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="talas-figure">
+          <a href="images/talas-05-administration.webp" target="_blank" rel="noopener">
+            <img src="images/talas-05-administration.webp"
+                 alt="Fiche salarié créée à partir du candidat retenu"
+                 loading="lazy">
+          </a>
+          <figcaption>
+            <strong>05 · Fiche salarié</strong>
+            <span>Transfert des informations du candidat retenu vers l'administration du personnel.</span>
+          </figcaption>
+        </figure>
+
+        <figure class="talas-figure">
+          <a href="images/talas-06-administration.webp" target="_blank" rel="noopener">
+            <img src="images/talas-06-administration.webp"
+                 alt="Promesse d'embauche générée depuis TALAS"
+                 loading="lazy">
+          </a>
+          <figcaption>
+            <strong>06 · Promesse d'embauche</strong>
+            <span>Génération du document à partir des informations du candidat retenu.</span>
+          </figcaption>
+        </figure>
+
+      </div>
+
+      <div class="vision-card">
+        <h4>Perspectives d'évolution</h4>
+        <p>
+          TALAS a vocation à évoluer progressivement vers
+          une plateforme RH modulaire, avec l'intégration
+          de nouvelles fonctionnalités au-delà du recrutement.
+        </p>
+      </div>
+
+    </article>
+
+    <!-- RECOPE -->
+
+    <article class="project">
+
+      <div class="project-header">
+        <h3>RECOPE</h3>
+        <span class="project-type">Projet académique</span>
+      </div>
+
+      <p class="project-role">Création web · Vercel / v0</p>
+
+      <p class="project-description">
+        Site web sur le thème de la récupération des cosmétiques
+        périmés. J'ai rédigé les consignes et piloté la création
+        du site avec un outil d'intelligence artificielle.
+      </p>
+
+      <a class="project-link"
+         href="https://kzmimpyw7r0p56pg80ai.lite.vusercontent.net/"
+         target="_blank" rel="noopener">
+        Découvrir le site →
+      </a>
+
+    </article>
+
   </div>
 </section>
+
+<!-- EXPERIENCE -->
 
 <section id="experience">
   <div class="wrap">
-    <h2>Expérience</h2>
 
-    <div class="item">
-      <h3>Chargée de recrutement, Crit Experts et Cadres</h3>
-      <p class="meta">La Défense, mars 2024 à septembre 2026, en alternance</p>
+    <p class="section-label">Parcours professionnel</p>
+    <h2 class="section-title">Expérience</h2>
+
+    <article class="experience-card">
+
+      <h3>Chargée de recrutement · CRIT Experts & Cadres</h3>
+
+      <p class="experience-meta">
+        La Défense · Mars 2024 – Septembre 2026 · Alternance
+      </p>
+
       <ul>
-        <li>Recruter des profils cadres dans de nombreux secteurs</li>
-        <li>Gérer chaque recrutement de bout en bout, avec autonomie</li>
-        <li>Suivre la relation avec les managers et les candidats</li>
+        <li>Recrutement de profils cadres dans plusieurs secteurs d'activité</li>
+        <li>Gestion autonome des recrutements de bout en bout</li>
+        <li>Sourcing, chasse et qualification des candidats</li>
+        <li>Suivi des relations avec les managers et les candidats</li>
       </ul>
-      <ul class="results" aria-label="Résultats chez Crit">
-        <li><strong>13 placements</strong>réalisés en 2 ans</li>
-        <li><strong>80 %</strong>de périodes d’essai réussies</li>
-        <li><strong>3 jours à 4 semaines</strong>de délai moyen selon le profil</li>
-        <li><strong>75 %</strong>de satisfaction des managers selon les postes</li>
-      </ul>
-    </div>
 
-    <div class="item">
-      <h3>Assistante RH, GIS Services</h3>
-      <p class="meta">CDD de 18 mois, 2022 à 2023</p>
-    </div>
+      <div class="results">
+
+        <div class="result-card">
+          <strong>13</strong>
+          <span>Placements réalisés en 2 ans</span>
+        </div>
+
+        <div class="result-card">
+          <strong>80 %</strong>
+          <span>De périodes d'essai réussies</span>
+        </div>
+
+        <div class="result-card">
+          <strong>3 jours à 4 semaines</strong>
+          <span>Délai moyen selon le profil</span>
+        </div>
+
+        <div class="result-card">
+          <strong>75 %</strong>
+          <span>De satisfaction des managers selon les postes</span>
+        </div>
+
+      </div>
+
+    </article>
+
+    <article class="experience-card">
+
+      <h3>Assistante RH · GIS Services</h3>
+
+      <p class="experience-meta">CDD de 18 mois · 2022 – 2023</p>
+
+    </article>
+
   </div>
 </section>
+
+<!-- EDUCATION -->
 
 <section id="formation">
   <div class="wrap">
-    <h2>Formation</h2>
-    <div class="item">
-      <h3>Master en Management des Ressources Humaines</h3>
-      <p class="meta">Ascencia Business School, diplôme 2026</p>
-      <p>Spécialisation : coordination de la gestion du personnel et digitalisation RH.</p>
+
+    <p class="section-label">Parcours académique</p>
+    <h2 class="section-title">Formation</h2>
+
+    <div class="education-list">
+
+      <article class="education-item">
+        <h3>Master en Management des Ressources Humaines</h3>
+        <p>Ascencia Business School · 2026</p>
+        <p>Spécialisation : coordination de la gestion du personnel et digitalisation RH.</p>
+      </article>
+
+      <article class="education-item">
+        <h3>Bachelor Chargée des relations sociales et projet RSE</h3>
+        <p>Fac For Pro · 2023 – 2024</p>
+      </article>
+
+      <article class="education-item">
+        <h3>Licence professionnelle Administration des entreprises</h3>
+        <p>ESGAE · 2016 – 2017</p>
+      </article>
+
+      <article class="education-item">
+        <h3>BTS Gestion financière</h3>
+        <p>ESGAE · 2015 – 2016</p>
+      </article>
+
     </div>
-    <div class="item">
-      <h3>Bachelor Chargée des relations sociales et projet RSE</h3>
-      <p class="meta">Fac For Pro, 2023 à 2024</p>
-    </div>
-    <div class="item">
-      <h3>Licence professionnelle Administration des entreprises</h3>
-      <p class="meta">ESGAE, 2016 à 2017</p>
-    </div>
-    <div class="item">
-      <h3>BTS Gestion financière</h3>
-      <p class="meta">ESGAE, 2015 à 2016</p>
-    </div>
+
   </div>
 </section>
+
 </main>
+
+<!-- CONTACT -->
 
 <footer id="contact">
   <div class="wrap">
-    <h2>Contact</h2>
-    <p>Pour échanger sur un poste en RH ou en SIRH, écrivez-moi :</p>
-    <p><a href="mailto:tegimalgracemalatou@gmail.com">tegimalgracemalatou@gmail.com</a></p>
-    <p><a href="https://www.linkedin.com/in/grace-malatou-951a51156/">Mon profil LinkedIn</a></p>
+
+    <p class="section-label">Restons en contact</p>
+    <h2>Échangeons sur vos projets RH.</h2>
+
+    <p>
+      Pour échanger sur une opportunité en recrutement,
+      Talent Acquisition ou SIRH, contactez-moi.
+    </p>
+
+    <p>
+      <a href="mailto:tegimalgracemalatou@gmail.com">
+        tegimalgracemalatou@gmail.com
+      </a>
+    </p>
+
+    <p>
+      <a href="https://www.linkedin.com/in/grace-malatou-951a51156/"
+         target="_blank" rel="noopener">
+        LinkedIn · Mon profil professionnel
+      </a>
+    </p>
+
+    <div class="footer-bottom">
+      © 2026 Grace Malatou · Portfolio professionnel
+    </div>
+
   </div>
 </footer>
 
 </body>
 </html>
+```
